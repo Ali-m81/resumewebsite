@@ -1,0 +1,161 @@
+.listOFhambergure {
+    display: none;
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+    color: #909090;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85rem;
+    max-width: 85rem;
+    margin-left: 4rem;
+    border-bottom: 1px black solid;
+    position: fixed;
+    z-index: 4;
+    margin-top: -4rem;
+    background-color: rgba(248, 240, 250, .3);
+}
+
+.List {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3rem;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: .5rem;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+
+.selected {
+    color: #c86bc4;
+}
+
+a {
+    text-decoration: none;
+    color: #deb4e4;
+}
+
+.h::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #b96adf 0%, #deb4e4 100%);
+    /* color: linear-gradient(260deg, #b96adf 25%, #deb4e4); */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.h:hover::after {
+    transform: scaleX(1);
+}
+
+.button button {
+    background: none;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: .5rem;
+
+}
+
+.button button::before {
+    content: '';
+    width: 0;
+    height: 2.1rem;
+    border-radius: 9px;
+    position: absolute;
+    top: 1.8rem;
+    left: 96.6em;
+    background-image: linear-gradient(to right, #b96adf 0%, #deb4e4 100%);
+    z-index: -1;
+}
+
+.button button:hover::before {
+    transform: skewX();
+    transition-duration: .5s;
+    width: 4.5rem;
+}
+
+button:hover {
+    color: #fff;
+
+
+}
+
+.hamberguer {
+    display: none;
+}
+
+
+@media (min-width : 360px) and (max-width : 660px) {
+    .hamberguer {
+        display: flex;
+        margin-left: 12rem;
+        cursor: pointer;
+    }
+
+    header {
+        flex-direction: row;
+        width: 24rem;
+        height: 3rem;
+        margin: 0;
+
+    }
+
+    .h {
+        display: none;
+    }
+
+    .List {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button button {
+        display: none;
+    }
+
+    .listOFhambergure {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        left: 0;
+        width: 10rem;
+        height: 100vh;
+        background-color: red;
+        margin-top: 6rem;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 2;
+        left: -100%;
+    }
+
+    .listOFhambergure li {
+        color: black;
+
+
+    }
+}

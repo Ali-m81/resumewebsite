@@ -1,0 +1,16 @@
+.homepage {
+    display: flex;
+    /* background-image: linear-gradient(to bottom, #fff 0%, #fdffed 100%); */
+    width: 80rem;
+    margin-left: 13rem;
+    margin-top: 6rem;
+}
+
+@media (min-width:360px) and (max-width :660px) {
+    .homepage {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+
+    }
+}

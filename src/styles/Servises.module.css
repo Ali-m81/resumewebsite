@@ -1,0 +1,66 @@
+.cServises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80rem;
+    height: 20rem;
+    background-color: red;
+    margin-left: 7.5rem;
+    background-image: linear-gradient(to top, #fff 0%, #faebfc 100%);
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.servises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    margin-top: 2.5rem;
+}
+
+.servises span {
+    font-size: 2rem;
+    color: rgb(12, 12, 12);
+}
+
+.servises p {
+    width: 21rem;
+    color: rgb(12, 12, 12);
+}
+
+.servises svg {
+    font-size: 3rem;
+    color: #512e57;
+}
+
+.services {
+    position: absolute;
+    left: 33.5rem;
+    top: 0rem;
+    color: black;
+    font-size: 3rem;
+}
+
+.services span {
+    color: rgb(113, 37, 132) !important;
+}
+
+@media (min-width :360px) and (max-width:660px) {
+    .cServises {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 23rem;
+        height: 60rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+    .services {
+        left: 0rem;
+    }
+}

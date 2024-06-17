@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pmain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80rem;
+    margin-left: 2rem;
+    position: relative;
+    margin-top: 2rem;
+    background-image: #fdf7fe;
+
+}
+
+.pcart {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: -2px 13px 60px 5px #909090;
+    scale: .8;
+    margin-top: 4rem;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* .pcart:hover {
+    scale: 1;
+} */
+
+.pcart p {
+    font-size: 1.3rem;
+    width: 15rem;
+    color: black;
+}
+
+.pb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pb button {
+    width: 5rem;
+    height: 2.3rem;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    left: 25rem;
+    top: 1rem;
+    font-size: 2.5rem;
+    z-index: 2;
+}
+
+.pcart img {
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+
+}
+
+
+
+@media (min-width :360px) and (max-width :660px) {
+    .pmain {
+        width: 24rem;
+        margin-left: 0rem;
+    }
+
+    .pcart img {
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+    }
+
+    .pcart {
+        width: 28rem;
+        padding: .5rem;
+    }
+
+    .title {
+        left: 4rem;
+        top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        display: flex;
+        margin-top: 1rem;
+        width: 22rem;
+    }
+
+    .buttons button {
+        width: 20rem;
+        margin-top: .3rem;
+    }
+
+}
